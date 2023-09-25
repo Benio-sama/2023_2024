@@ -8,4 +8,6 @@ export class Horcsog {
         this.szin = szin;
         this.magassag = magassag;
     }
+
+
 }

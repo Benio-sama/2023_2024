@@ -4,19 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kalandor
+namespace Tulelo
 {
 	internal class Program
 	{
 		static void Main(string[] args)
 		{
-			Kalandor k = new Kalandor("Mici");
 			Feladatok f = new Feladatok();
-			f.Jatek(k);
+			Tulelo t = new Tulelo();
+			f.Jatek(t);
 
 
-
-            Console.ReadKey();
+			Console.ReadKey();
         }
 	}
 }

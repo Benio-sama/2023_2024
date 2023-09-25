@@ -25,8 +25,6 @@ function feldolgoz()
 
   let a = new Horcsog(nev, szin, magassag);
   lista.push(a);
-  for (let data in lista)
-  {
-    console.log(data);
-  }
+  console.log('neve: ' + a.nev + ', szine: ' + a.szin + ', magassaga: ' + a.magassag);
+  console.log(lista.length);
 }
