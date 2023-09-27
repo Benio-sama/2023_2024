@@ -1,0 +1,8 @@
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\bin\Debug\kosar2004.exe.config
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\bin\Debug\kosar2004.exe
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\bin\Debug\kosar2004.pdb
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\obj\Debug\kosar2004.csproj.AssemblyReference.cache
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\obj\Debug\kosar2004.csproj.SuggestedBindingRedirects.cache
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\obj\Debug\kosar2004.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\obj\Debug\kosar2004.exe
+C:\Users\vagok\Asztal\github\2023_2024\kosar2004\kosar2004\obj\Debug\kosar2004.pdb
