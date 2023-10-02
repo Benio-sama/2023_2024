@@ -1,0 +1,8 @@
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\obj\Debug\Kalozos.csproj.AssemblyReference.cache
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\obj\Debug\Kalozos.csproj.SuggestedBindingRedirects.cache
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\obj\Debug\Kalozos.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\bin\Debug\Kalozos.exe.config
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\bin\Debug\Kalozos.exe
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\bin\Debug\Kalozos.pdb
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\obj\Debug\Kalozos.exe
+C:\Users\vagok\Asztal\github\2023_2024\Kalozos\Kalozos\obj\Debug\Kalozos.pdb
