@@ -24,7 +24,7 @@ namespace Kalozos
             }
             else 
             {
-                Console.WriteLine("he's dead");
+                //Console.WriteLine("he's dead");
             }
         }
         public void HowsItGoingMate()
@@ -33,18 +33,18 @@ namespace Kalozos
             {
                 if (this.reszeg < 4)
                 {
-                    Console.WriteLine("Pour me anudder!");
+                    //Console.WriteLine("Pour me anudder!");
                 }
                 else
                 {
-                    Console.WriteLine("Arghh, I'ma Pirate. How d'ya d'ink its goin?");
-                    Console.WriteLine("*passed out*");
+                    //Console.WriteLine("Arghh, I'ma Pirate. How d'ya d'ink its goin?");
+                    //Console.WriteLine("*passed out*");
                     this.reszeg = 0;
                 }
             }
             else 
             {
-                Console.WriteLine("he's dead");
+                //Console.WriteLine("he's dead");
             }
         }
         public void Die()
@@ -68,12 +68,12 @@ namespace Kalozos
                 }
                 else
                 {
-                    Console.WriteLine("*both of them passed out*");
+                    //Console.WriteLine("*both of them passed out*");
                 }
             }
             else
             {
-                Console.WriteLine("one of them or both are dead");
+                //Console.WriteLine("one of them or both are dead");
             }
         }
         public void Parrot()

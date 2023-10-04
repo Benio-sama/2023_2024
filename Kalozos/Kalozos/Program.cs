@@ -10,13 +10,17 @@ namespace Kalozos
     {
         static void Main(string[] args)
         {
-            Random r = new Random();
-            int seged = r.Next(1,115);
-            int seged2 = r.Next(1,115);
-            Console.WriteLine(seged);
-            Console.WriteLine(seged2);
+            /*Armada a = new Armada();
+            Armada a2 = new Armada();
+            a.FillArmada();
+            a2.FillArmada();
+            Console.WriteLine(a.War(a2));*/
 
-
+            Ship s = new Ship();
+            Ship s2 = new Ship();
+            s.FillShip();
+            s2.FillShip();
+            Console.WriteLine(s.Battle(s2));
 
 
 
