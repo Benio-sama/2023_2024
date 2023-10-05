@@ -26,7 +26,7 @@ namespace Kalozos
 			int thisShipIndex = 0;
 			int otherShipIndex = 0;
 
-			while (thisShipIndex < ships.Count && otherShipIndex < a.ships.Count)
+			while (thisShipIndex < ships.Count() && otherShipIndex < a.ships.Count())
 			{
 				Ship thisShip = ships[thisShipIndex];
 				Ship otherShip = a.ships[otherShipIndex];
@@ -43,7 +43,30 @@ namespace Kalozos
 				}
 			}
 
-			return thisShipIndex == ships.Count;
-		}
+			return thisShipIndex == ships.Count();
+
+            /*
+             * int thisShipIndex = 0;
+                int otherShipIndex = 0;
+
+                while (thisShipIndex < ships.Count && otherShipIndex < otherArmada.ships.Count)
+                {
+                    Ship thisShip = ships[thisShipIndex];
+                    Ship otherShip = otherArmada.ships[otherShipIndex];
+
+                    bool thisShipWins = thisShip.Battle(otherShip);
+
+                    if (thisShipWins)
+                    {
+                        otherShipIndex++;
+                    }
+                    else
+                    {
+                        thisShipIndex++;
+                    }
+                }
+
+                return thisShipIndex == ships.Count;*/
+        }
     }
 }
