@@ -10,17 +10,17 @@ namespace Kalozos
     {
         static void Main(string[] args)
         {
-            Armada a = new Armada();
+            /*Armada a = new Armada();
             Armada a2 = new Armada();
             a.FillArmada();
             a2.FillArmada();
-            Console.WriteLine(a.War(a2));
+            Console.WriteLine(a.War(a2));*/
 
-            /*Ship s = new Ship();
+            Ship s = new Ship();
             Ship s2 = new Ship();
             s.FillShip();
             s2.FillShip();
-            Console.WriteLine(s.Battle(s2));*/
+            Console.WriteLine(s.Battle(s2));
 
 
 

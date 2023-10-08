@@ -83,7 +83,7 @@ namespace Kalozos
 					}
 					for (int i = 0; i < 57; i++)
 					{
-						s.crew[r.Next(1, s.crew.Count() - 1)].Die();
+						s.crew[r.Next(1, 115)].Die();
 					}
 					return true;
 				}
@@ -124,73 +124,47 @@ namespace Kalozos
 					}
 					for (int i = 0; i < 57; i++)
 					{
-						s.crew[r.Next(1, s.crew.Count() - 1)].Die();
+						s.crew[r.Next(1, 115)].Die();
 					}
 					return true;
 				}
-                else if (this.Representation2() < s.Representation2())
-                {
-                    Console.WriteLine("Draw?");
-                    return false;
-                }
-                else
-                {
-                    Console.WriteLine("You won! Let's get drunk!");
-                    int seged = r.Next(1, 11);
-                    foreach (var item in this.crew)
-                    {
-                        for (int i = 0; i < seged; i++)
-                        {
-                            item.DrinkSomeRum();
-                        }
-                    }
-                    for (int i = 0; i < 57; i++)
-                    {
-                        s.crew[r.Next(1, s.crew.Count() - 1)].Die();
-                    }
-                    return true;
-                }
             }
-            else //this.Representation1() < s.Representation1()
+            else
             {
-                if (this.Representation2() == s.Representation2())
-                {
-                    Console.WriteLine("You lost! Too bad, you lost a random amount of pirates!");
-                    foreach (var item in s.crew)
-                    {
-                        for (int i = 0; i < r.Next(1, 11); i++)
-                        {
-                            item.DrinkSomeRum();
-                        }
-                    }
-                    for (int i = 0; i < 57; i++)
-                    {
-                        this.crew[r.Next(1, crew.Count() - 1)].Die();
-                    }
-                    return false;
-                }
-                else if (this.Representation2() > s.Representation2())
-                {
-                    Console.WriteLine("Draw?");
-                    return false;
-                }
-                else
-                {
-                    Console.WriteLine("You lost! Too bad, you lost a random amount of pirates!");
-                    foreach (var item in s.crew)
-                    {
-                        for (int i = 0; i < r.Next(1, 11); i++)
-                        {
-                            item.DrinkSomeRum();
-                        }
-                    }
-                    for (int i = 0; i < 57; i++)
-                    {
-                        this.crew[r.Next(1, crew.Count() +- 1)].Die();
-                    }
-                    return false;
-                }
+                
             }
+			/* nyert
+                Console.WriteLine("You won! Let's get drunk!");
+                int seged = r.Next(1, 11);
+                foreach (var item in this.crew)
+                {
+                    for (int i = 0; i < seged; i++)
+                    {
+                        item.DrinkSomeRum();
+                    }
+                }
+                for (int i = 0; i < 57; i++)
+                {
+                    s.crew[r.Next(1, 115)].Die();
+                }
+                return true;*/
+			/* dontetlen
+                Console.WriteLine("Draw?");
+                return false;*/
+			/* vesztett
+                Console.WriteLine("You lost! Too bad, you lost a random amount of pirates!");
+                foreach (var item in s.crew)
+                {
+                    for (int i = 0; i < r.Next(1, 11); i++)
+                    {
+                        item.DrinkSomeRum();
+                    }
+                }
+                for (int i = 0; i < 57; i++)
+                {
+                    this.crew[r.Next(1, crew.Count() - 1)].Die();
+                }
+                return false;*/
 		}
 	}
 }
