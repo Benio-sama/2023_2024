@@ -1,0 +1,7 @@
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\bin\Debug\VideoLibrary.exe.config
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\bin\Debug\VideoLibrary.exe
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\bin\Debug\VideoLibrary.pdb
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\obj\Debug\VideoLibrary.csproj.AssemblyReference.cache
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\obj\Debug\VideoLibrary.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\obj\Debug\VideoLibrary.exe
+C:\Users\vagok\Asztal\github\2023_2024\VideoLibrary\VideoLibrary\obj\Debug\VideoLibrary.pdb
