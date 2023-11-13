@@ -47,7 +47,20 @@ namespace GenericClass
 		}
 		public void Kereses(K kulcs)
 		{
-
-		}
+            foreach (var item in lista)
+            {
+				if (kulcs.Equals(item.Kulcs))
+				{
+                    Console.WriteLine(item);
+                }
+            }
+        }
+		public void Kiir()
+		{
+            foreach (var item in lista)
+            {
+                Console.WriteLine(item);
+            }
+        }
 	}
 }
