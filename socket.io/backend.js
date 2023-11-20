@@ -12,18 +12,22 @@ const io = socketIo(server);
 app.use(express.static(__dirname + '/public'));
 
 io.on('connection', (socket) => {
-    console.log('egy kliens csatlakozott');
+  console.log('egy kliens csatlakozott');
 
-    socket.on('disconnect', () =>{
-        console.log('kliens lecsatlakozott');
-    });
-});
-io.on('connection', (socket) => {
-    socket.on('message', (data) => {
-      io.emit('message', data); 
-    });
+  socket.on('disconnect', () => {
+    console.log('kliens lecsatlakozott');
   });
 
+  socket.on('login', login_data => {
+    if (login_data.admin === "FelhasznaloNev" && login_data.password === "Jelszo") {
+      socket.join("logged_in");
+    }
+    else {
+      console.log("hibas adatok");
+    }
+  });
+});
+
 server.listen(3000, () => {
-    console.log('a szerver fut a 3000-es porton');
+  console.log('a szerver fut a 3000-es porton');
 });

@@ -1,0 +1,165 @@
+:root {
+    --LightGARed: rgb(250, 46, 58); /**/
+    --GARed: rgb(173, 34, 47); /**/
+    --DarkGARed: rgb(99, 17, 31); /**/
+    --LightGABlue: rgb(35, 207, 223); /**/
+    --GABlue: rgb(11, 164, 178); /**/
+    --DarkGABlue: rgb(17, 29, 39); /**/
+    --LightGABlack: rgb(24, 36, 50); /**/
+    --GABlack: rgb(8, 11, 26); /**/
+    --DarkGABlack: rgb(0, 0, 0); /**/
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--DarkGABlue);
+	display: flex;
+	color: var(--LightGABlack);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: cursive;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+h1 {
+	font-weight: bold;
+	text-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	margin-bottom: 60px;
+}
+
+p {
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 0px 75px 0px 0px;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid var(--LightGARed);
+	background-color: var(--LightGARed);
+	color: #FFFFFF;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	font-family: cursive;
+	margin-top: 40px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition-duration: 0.4s;
+}
+
+button:hover{
+	border: 1px solid var(--GARed);
+	background-color: var(--GARed);
+}
+
+form {
+	/*background-color: #FB583E;*/
+	background-color: rgb(255, 193, 155);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	/*background-color: #fd664e;*/
+	background-color: rgb(255, 211, 185);
+	border: none;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-radius: 5px;
+	font-family: cursive;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	transition-duration: 0.4s;
+}
+
+input:hover{
+	/*background-color: #fd725d;*/
+	background-color: rgb(241, 200, 176);
+}
+
+#container {
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 960px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+a{
+	color: var(--DarkGARed);
+	margin-top: 12px;
+	text-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+	transition-duration: 0.4s;
+	font-size: 16px;
+}
+
+a:hover{
+	color: var(--DarkGABlue);
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.log-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+
+.overlay-container {
+	position: absolute;
+	background-image: url(GuideianAngelIcon.png);
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+
+.overlay {
+
+	background-size: cover;
+	background-position: 0 0;
+	color: white;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+
+
+.overlay-right {
+	right: 0;
+}

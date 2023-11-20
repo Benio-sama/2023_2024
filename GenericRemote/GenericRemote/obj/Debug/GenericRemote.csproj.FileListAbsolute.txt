@@ -1,0 +1,2 @@
+C:\Users\vagok\Documents\GitHub\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.csproj.AssemblyReference.cache
+C:\Users\vagok\Documents\GitHub\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.csproj.CoreCompileInputs.cache

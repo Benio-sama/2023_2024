@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="frontend.js"></script>
-    <title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
 </head>
 <body>
-    <div>
-        <label for = "messageinput"> message </label>
-        <input id = "messageinput" type = "text">
-        <button id = "sendbutton"> send </button>
-    </div>
+	<div id="container">
+		<div class="form-container log-in-container">
+			<form action="#">
+				<h1>Guideian Angel</h1>
+				<input id="admin" type="text" placeholder="Enter your username" />
+				<input id="password" type="password" placeholder="Enter your password" />
+				<button id="login">Log In</button>
+				<a href="https://guideianangel.herokuapp.com">Homepage</a>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay"></div>
+		</div>
+	</div>
 </body>
 </html>

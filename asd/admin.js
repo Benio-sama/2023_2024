@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     document.getElementById("login").addEventListener("click", () => {
         let admin = document.getElementById("admin").value;
         let password = document.getElementById("password").value;
+        
     });
 });
 async function LoadLogin() {
