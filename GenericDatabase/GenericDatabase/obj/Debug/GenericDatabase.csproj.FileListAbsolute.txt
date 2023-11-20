@@ -1,0 +1,7 @@
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\bin\Debug\GenericDatabase.exe.config
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\bin\Debug\GenericDatabase.exe
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\bin\Debug\GenericDatabase.pdb
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\obj\Debug\GenericDatabase.csproj.AssemblyReference.cache
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\obj\Debug\GenericDatabase.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\obj\Debug\GenericDatabase.exe
+C:\Users\vagok\Asztal\github\2023_2024\GenericDatabase\GenericDatabase\obj\Debug\GenericDatabase.pdb
