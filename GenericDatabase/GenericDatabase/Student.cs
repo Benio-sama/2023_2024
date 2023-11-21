@@ -25,7 +25,7 @@ namespace GenericDatabase
 
         public override string ToString()
         {
-            return $"{this.name}, id: {this.id}, age: {this.age}";
+            return $"{this.name}, id: {this.id}, kor: {this.age}";
         }
     }
 }

@@ -13,6 +13,14 @@ namespace GenericRemote
             TV tv = new TV();
             RemoteControl<TV> tvremote = new RemoteControl<TV>(tv);
             tvremote.Power_on();
+            tvremote.Volume_up();
+            tvremote.Volume_up();
+            tvremote.Volume_up();
+            tvremote.Volume_up();
+            tvremote.Volume_down();
+            tvremote.Power_off();
+
+            Console.ReadKey();
         }
     }
 }
