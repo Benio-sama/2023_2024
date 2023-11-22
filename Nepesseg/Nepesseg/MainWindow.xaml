@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="334,22,334,374">
-        <Label FontSize="40" Margin="-120,0,-98,-49">Uj orszag felvetele</Label>
+        <Label FontSize="40" Margin="-109,-25,-109,-25" Content="Új ország felvétele"/>
+        <Label FontSize="15" Content="Orszag" Margin="-278,81,278,-81"/>
+        <Label FontSize="15" Content="Terulet" Margin="-278,124,278,-124"/>
+        <Label FontSize="15" Content="Nepesseg" Margin="-278,167,278,-167"/>
+        <Label FontSize="15" Content="Fovaros" Margin="-278,210,278,-210"/>
+        <Label FontSize="15" Content="Fovaros lakossaga" Margin="-278,253,278,-253"/>
     </Grid>
 </Window>

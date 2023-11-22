@@ -13,19 +13,21 @@ namespace Nepesseg
         public long Nepesseg { get; private set; }
         public string Fovaros { get; private set; }
         public int FovarosNepesseg { get; private set; }
+        public bool KoncentralodikE { get; private set; }
 
-        public Orszag(string orszagnev, int terulet, long nepesseg, string fovaros, int fovarosNepesseg)
+        public Orszag(string orszagnev, int terulet, long nepesseg, string fovaros, int fovarosNepesseg, bool koncentralodikE)
         {
             Orszagnev = orszagnev;
             Terulet = terulet;
             Nepesseg = nepesseg;
             Fovaros = fovaros;
             FovarosNepesseg = fovarosNepesseg;
+            KoncentralodikE = koncentralodikE;
         }
 
         public override string ToString()
         {
-            return $"{this.Orszagnev}: \nterulete: {this.Terulet}, \nnepessege: {this.Nepesseg} \nfovarosa: {this.Fovaros} \nfovaros nepessege: {this.FovarosNepesseg} \n------------------------";
+            return $"{this.Orszagnev}: \nterulete: {this.Terulet}, \nnepessege: {this.Nepesseg} \nfovarosa: {this.Fovaros} \nfovaros nepessege: {this.FovarosNepesseg} \nfovarosba koncentralodik? {(this.KoncentralodikE ? "igen" : "nem")} \n------------------------";
         }
     }
 }

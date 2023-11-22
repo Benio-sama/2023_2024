@@ -16,6 +16,7 @@ namespace seged
             f.Nepsuruseg(); 
             f.KinaVsIndia();
             f.Elso3();
+            f.MeghaladjaE();
 
             Console.ReadKey();
         }

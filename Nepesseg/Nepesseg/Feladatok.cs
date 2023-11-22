@@ -25,9 +25,8 @@ namespace Nepesseg
                     string[] sorok = sor.Split(';');
                     string nev = sorok[0];
                     int terulet = int.Parse(sorok[1]);
-                    string nepesseg = sorok[2];
                     long nep;
-                    if (nepesseg[nepesseg.Length - 1].Equals('g'))
+                    if (sorok[2][sorok[2].Length - 1].Equals('g'))
                     {
                         sorok[2] = sorok[2].Remove(sorok[2].Length - 1);
                         nep = long.Parse(sorok[2]);
@@ -38,13 +37,65 @@ namespace Nepesseg
                         nep = long.Parse(sorok[2]);
                     }
                     string fovaros = sorok[3];
-                    int fovnep = int.Parse(sorok[4]);
-                    Orszag o = new Orszag(nev, terulet, nep, fovaros, fovnep);
+                    int fovnep = int.Parse(sorok[4]) * 1000;
+                    bool meghalade = false;
+                    if ((double)nep * 0.3 < fovnep)
+                    {
+                        meghalade = true;
+                    }
+                    Orszag o = new Orszag(nev, terulet, nep, fovaros, fovnep, meghalade);
                     orszagok.Add(o);
                 }
-                foreach(var item in orszagok)
+                /*foreach (var item in orszagok)
                 {
                     Console.WriteLine(item);
+                }*/
+            }
+        }
+        public void Hany()
+        {
+            Console.WriteLine(orszagok.Count());
+        }
+        public void Nepsuruseg()
+        {
+            foreach (var item in orszagok)
+            {
+                if (item.Orszagnev == "Kína")
+                {
+                    double nep = item.Nepesseg / item.Terulet;
+                    Console.WriteLine($"Kina nepsurusege: {nep} fo/km^2");
+                }
+            }
+        }
+        public void KinaVsIndia()
+        {
+            long kina = 0;
+            long india = 0;
+            foreach (var item in orszagok)
+            {
+                if (item.Orszagnev == "Kína")
+                {
+                    kina = item.Nepesseg;
+                }
+                if (item.Orszagnev == "India")
+                {
+                    india = item.Nepesseg;
+                }
+            }
+            Console.WriteLine($"Kinaban {kina - india} fovel eltek tobben a vizsgalt idopontban");
+        }
+        public void Elso3()
+        {
+            var list = orszagok.OrderByDescending(x => x.Nepesseg).ToList();
+            Console.WriteLine($"a 3. legnepesebb orszag: {list[2].Orszagnev} - {list[2].Nepesseg} fo");
+        }
+        public void MeghaladjaE()
+        {
+            foreach (var item in orszagok)
+            {
+                if (item.KoncentralodikE)
+                {
+                    Console.WriteLine($"\t{item.Orszagnev} ({item.Fovaros})");
                 }
             }
         }
