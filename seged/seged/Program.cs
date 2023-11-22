@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace seged
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Feladatok f = new Feladatok();
+            f.Beolvas("adatok-utf8.txt");
+
+            Console.ReadKey();
+        }
+    }
+}

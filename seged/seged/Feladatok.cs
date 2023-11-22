@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.IO;
 using System.Threading.Tasks;
-using System.Web;
 
-namespace Nepesseg
+namespace seged
 {
     internal class Feladatok
     {
@@ -42,7 +41,7 @@ namespace Nepesseg
                     Orszag o = new Orszag(nev, terulet, nep, fovaros, fovnep);
                     orszagok.Add(o);
                 }
-                foreach(var item in orszagok)
+                foreach (var item in orszagok)
                 {
                     Console.WriteLine(item);
                 }
