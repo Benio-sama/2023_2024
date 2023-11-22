@@ -12,6 +12,10 @@ namespace seged
         {
             Feladatok f = new Feladatok();
             f.Beolvas("adatok-utf8.txt");
+            f.Hany();
+            f.Nepsuruseg(); 
+            f.KinaVsIndia();
+            f.Elso3();
 
             Console.ReadKey();
         }

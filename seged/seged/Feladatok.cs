@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -41,10 +42,54 @@ namespace seged
                     Orszag o = new Orszag(nev, terulet, nep, fovaros, fovnep);
                     orszagok.Add(o);
                 }
-                foreach (var item in orszagok)
+                /*foreach (var item in orszagok)
                 {
                     Console.WriteLine(item);
+                }*/
+            }
+        }
+        public void Hany()
+        {
+            Console.WriteLine(orszagok.Count());
+        }
+        public void Nepsuruseg()
+        {
+            foreach (var item in orszagok)
+            {
+                if (item.Orszagnev == "Kína")
+                {
+                    double nep = item.Nepesseg / item.Terulet;
+                    Console.WriteLine($"Kina nepsurusege: {nep} fo/km^2");
                 }
+            }
+        }
+        public void KinaVsIndia()
+        {
+            long kina = 0;
+            long india = 0;
+            foreach (var item in orszagok)
+            {
+                if (item.Orszagnev == "Kína")
+                {
+                    kina = item.Nepesseg;
+                }
+                if (item.Orszagnev == "India")
+                {
+                    india = item.Nepesseg;
+                }
+            }
+            Console.WriteLine(kina);
+            Console.WriteLine(india);
+            long kul = kina - india;
+            Console.WriteLine($"Kinaban {kul} fovel eltek tobben a vizsgalt idopontban");
+        }
+        public void Elso3()
+        {
+            var list = orszagok.OrderByDescending(x => x.Nepesseg).ToList();
+            Console.WriteLine($"a 3 legnepesebb orszag: ");
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine($"{list[i].Orszagnev} - {list[i].Nepesseg} fo");
             }
         }
     }
