@@ -55,8 +55,13 @@ namespace Nepesseg
             long fovnepesseg = long.Parse(fovarnepLabel.Text);
             if (fovnepesseg > nepesseg)
             {
+                fovarnepLabel.Text = nepesseg.ToString();
                 MessageBox.Show("a fovaros lakossaga nem lehet tobb a nepessegnel");
                 return;
+            }
+            else
+            {
+
             }
         }
         private void KilepesgombClick(object sender, RoutedEventArgs e)
