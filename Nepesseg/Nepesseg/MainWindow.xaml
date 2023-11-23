@@ -5,13 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nepesseg"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="334,22,334,374">
-        <Label FontSize="40" Margin="-109,-25,-109,-25" Content="Új ország felvétele"/>
-        <Label FontSize="15" Content="Orszag" Margin="-278,81,278,-81"/>
-        <Label FontSize="15" Content="Terulet" Margin="-278,124,278,-124"/>
-        <Label FontSize="15" Content="Nepesseg" Margin="-278,167,278,-167"/>
-        <Label FontSize="15" Content="Fovaros" Margin="-278,210,278,-210"/>
-        <Label FontSize="15" Content="Fovaros lakossaga" Margin="-278,253,278,-253"/>
+        Title="Új ország felvétele" Height="450" Width="807">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="269"/>
+            <ColumnDefinition Width="Auto" MinWidth="269"/>
+            <ColumnDefinition Width="Auto" MinWidth="269"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="55.7"/>
+            <RowDefinition Height="55.7"/>
+            <RowDefinition Height="55.7"/>
+            <RowDefinition Height="55.7"/>
+            <RowDefinition Height="55.7"/>
+            <RowDefinition Height="55.7"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" HorizontalContentAlignment="Center" FontSize="20" Margin="10,10,10,10" Content="Új ország felvétele" Grid.Column="1"></Label>
+        
+        <Label Grid.Row="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16" Margin="10,10,10,10" Content="Ország:"/>
+        <TextBox Grid.Row="1" VerticalContentAlignment="Center" Margin="10,10,10,10" FontSize="15" Name="orszagLabel" Text="Chile" Grid.Column="1"/>
+
+        <Label Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16" Margin="10,10,10,10" Content="Terület:"/>
+        <TextBox Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10,10,10,10" FontSize="15" Name="teruletlabel" Text="756950" Grid.Column="1"/>
+
+        <Label Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16" Margin="10,10,10,10" Content="Népesség:"/>
+        <TextBox Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10,10,10,10" FontSize="15" Name="nepessegLabel" Text="19458000" Grid.Column="1"/>
+
+        <Label Grid.Row="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16" Margin="10,10,10,10" Content="Főváros:"/>
+        <TextBox Grid.Row="4" VerticalContentAlignment="Center" Margin="10,10,10,10" FontSize="15" Name="fovarosLabel" Text="Santiago" Grid.Column="1"/>
+
+        <Label Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="16" Margin="10,10,10,10" Content="Főváros lakossága:"/>
+        <TextBox Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="10,10,10,10" FontSize="15" Name="fovarnepLabel" Text="6257516" Grid.Column="1"/>
+
+        <Button Grid.Row="3" Margin="50,10,50,10" Content="Mentés" Name="mentes" Grid.Column="2" Click="MentesgombClick"/>
+        <Button Grid.Row="7" Margin="100,25,20, 0" Content="Kilépés" Name="kilep" Grid.Column="2" Click="KilepesgombClick"/>
     </Grid>
 </Window>
