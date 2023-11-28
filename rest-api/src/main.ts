@@ -1,7 +1,7 @@
 import './style.css'
 import {User} from './user.js'
 
-const API_URL = 'https://retoolapi.dev/HycTkA/data';
+const API_URL = 'http://localhost:3000/users';
 
 console.log(API_URL);
 

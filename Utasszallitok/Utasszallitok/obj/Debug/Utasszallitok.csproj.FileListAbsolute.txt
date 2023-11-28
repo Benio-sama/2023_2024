@@ -1,0 +1,7 @@
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\bin\Debug\Utasszallitok.exe.config
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\bin\Debug\Utasszallitok.exe
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\bin\Debug\Utasszallitok.pdb
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\obj\Debug\Utasszallitok.csproj.AssemblyReference.cache
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\obj\Debug\Utasszallitok.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\obj\Debug\Utasszallitok.exe
+C:\Users\vagok\Documents\GitHub\2023_2024\Utasszallitok\Utasszallitok\obj\Debug\Utasszallitok.pdb
