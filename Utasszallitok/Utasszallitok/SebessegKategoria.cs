@@ -23,5 +23,9 @@ namespace Utasszallitok
         {
             Utazosebesseg = utazosebesseg;
         }
+        public override string ToString()
+        {
+            return $"{Kategorianev}";
+        }
     }
 }

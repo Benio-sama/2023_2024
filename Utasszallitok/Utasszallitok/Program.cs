@@ -13,7 +13,16 @@ namespace Utasszallitok
             Feladatok f = new Feladatok();
             f.Beolvasas("utasszallitok.txt");
             f.DB();
+            Console.WriteLine("--------------------------------------------------");
             f.BoeingE();
+            Console.WriteLine("--------------------------------------------------");
+            f.LegtobbUtas();
+            Console.WriteLine("--------------------------------------------------");
+            f.Sebessegkat();
+            Console.WriteLine("--------------------------------------------------");
+            f.Beiras();
+
+
 
             Console.ReadKey();
         }

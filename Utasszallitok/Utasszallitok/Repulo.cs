@@ -36,7 +36,7 @@ namespace Utasszallitok
         public double Fesztav { get => fesztav; set => fesztav = value; }
         public override string ToString()
         {
-            return $"Tipus: {this.tipus} \nElso felszallas: {this.ev} \nUtasok szama: {this.utas} \nSzemelyzet: {this.szemelyzet} \nUtazosebesseg: {this.sebesseg} km/h";
+            return $"Tipus: {this.tipus} \nElso felszallas: {this.ev} \nUtasok szama: {this.utas} \nSzemelyzet: {this.szemelyzet} \nUtazosebesseg: {this.sebesseg} km/h \nFesztav: {this.fesztav}";
         }
     }
 }
