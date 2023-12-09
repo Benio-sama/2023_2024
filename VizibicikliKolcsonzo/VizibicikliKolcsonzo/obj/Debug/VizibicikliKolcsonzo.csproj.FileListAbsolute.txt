@@ -1,7 +1,0 @@
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\bin\Debug\VizibicikliKolcsonzo.exe.config
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\bin\Debug\VizibicikliKolcsonzo.exe
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\bin\Debug\VizibicikliKolcsonzo.pdb
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\obj\Debug\VizibicikliKolcsonzo.csproj.AssemblyReference.cache
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\obj\Debug\VizibicikliKolcsonzo.csproj.CoreCompileInputs.cache
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\obj\Debug\VizibicikliKolcsonzo.exe
-C:\Users\vagok\Asztal\github\2023_2024\VizibicikliKolcsonzo\VizibicikliKolcsonzo\obj\Debug\VizibicikliKolcsonzo.pdb

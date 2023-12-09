@@ -1,7 +1,0 @@
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\bin\Debug\seged.exe.config
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\bin\Debug\seged.exe
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\bin\Debug\seged.pdb
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\obj\Debug\seged.csproj.AssemblyReference.cache
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\obj\Debug\seged.csproj.CoreCompileInputs.cache
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\obj\Debug\seged.exe
-C:\Users\vagok\Documents\GitHub\2023_2024\seged\seged\obj\Debug\seged.pdb

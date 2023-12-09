@@ -1,9 +1,0 @@
-C:\Users\vagok\Documents\GitHub\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.csproj.AssemblyReference.cache
-C:\Users\vagok\Documents\GitHub\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.csproj.CoreCompileInputs.cache
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\bin\Debug\GenericRemote.exe.config
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\bin\Debug\GenericRemote.exe
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\bin\Debug\GenericRemote.pdb
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.csproj.AssemblyReference.cache
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.csproj.CoreCompileInputs.cache
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.exe
-C:\Users\vagok\Asztal\github\2023_2024\GenericRemote\GenericRemote\obj\Debug\GenericRemote.pdb

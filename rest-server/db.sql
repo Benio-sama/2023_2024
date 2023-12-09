@@ -1,5 +1,0 @@
-CREATE TABLE users (
-    id INT PRIMARY KEY AUTOINCREMENT,
-    full_name VARCHAR(1000) NOT NULL,
-    age INT NOT NULL,
-)
