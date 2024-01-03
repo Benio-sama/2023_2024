@@ -16,21 +16,26 @@ app.get('/ajandekok', async(req, res) => {
         const [rows, fields] = await db.query('SELECT id, nev, ar FROM ajandekok');
         res.status(200).send(rows);
     } catch (error) {
-        res.status(500).json({ error: 'internal server error' });
+        res.status(503).json({ error: 'service unavailable' });
     }
 });
 
 app.get('/ajandekok/:ajandekId', async(req, res) => {
-    const ajandekId = req.params.ajandekId;
     try {
-        const [rows, fields] = await db.query('SELECT id, nev, ar FROM ajandekok WHERE id = ?', [ ajandekId ])
-        if (rows.length === 0) {
-            res.status(404).json({error: 'cannot find ajandek'});
+        const ajandekId = req.params.ajandekId;
+        if (typeof ajandekId === 'number') {
+            const [rows, fields] = await db.query('SELECT id, nev, ar FROM ajandekok WHERE id = ?', [ ajandekId ])
+            res.send(rows);
+            if (rows.length === 0) {
+                res.status(404).json({error: 'cannot find ajandek'});
+            } else {
+                res.status(302).json(rows);
+            } 
         } else {
-            res.status(302).json(rows);
+            res.status(400).json({error: 'id has to be a number'});
         }
     } catch (error) {
-        res.status(500).json({error: 'internal server error'});
+        res.status(503).json({ error: 'service unavailable' });
     }
 });
 
@@ -38,10 +43,10 @@ app.post('/ajandekok', async(req, res)  => {
     try {
         const nev = req.body.nev;
         const ar = req.body.ar;
-        if (nev.length < 1) {
+        if (nev.length < 1 || !nev) {
             return res.status(400).json({error: 'nev has to be longer than 0 character'});
         }
-        if (ar < 1) {
+        if (ar < 1 || !ar) {
             return res.status(400).json({error: 'ar has to be greater than 0'});
         }
         const [data, fields] = await db.query('INSERT INTO ajandekok (nev, ar) VALUES(?, ?)', [nev, ar]);
@@ -52,31 +57,43 @@ app.post('/ajandekok', async(req, res)  => {
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({error: 'internal server error'});
+        res.status(503).json({ error: 'service unavailable' });
     }
 });
 
 app.delete('/ajandekok/:ajandekId', async (req, res) => {
-    const ajandekId = req.params.ajandekId;
-    await db.query('DELETE FROM ajandekok WHERE id = ?', [ajandekId]);
-    res.status(200).json();
+    try {
+        const ajandekId = req.params.ajandekId;
+        if (typeof ajandekId === 'number') {
+            await db.query('DELETE FROM ajandekok WHERE id = ?', [ajandekId]);
+            res.status(200).json();
+        } else {
+            res.status(400).json({error: 'id has to be a number'});
+        }
+    } catch (error) {
+        res.status(503).json({ error: 'service unavailable' });
+    }
 });
 
 app.put('/ajandekok/:ajandekId', async (req, res) => {
     try {
         const ajandekId = req.params.ajandekId;
-        const nev = req.body.nev;
-        const ar = req.body.ar;
-        if (nev.length < 1) {
-            return res.status(400).json({error: 'nev has ro be longer than 0 character'});
+        if (typeof ajandekId === 'number') {
+            const nev = req.body.nev;
+            const ar = req.body.ar;
+            if (nev.length < 1 || !nev) {
+                return res.status(400).json({error: 'nev has ro be longer than 0 character'});
+            }
+            if (ar.length < 1 || !ar) {
+                return res.status(400).json({error: 'ar has to be greater than 0'});
+            }
+            await db.query('UPDATE ajandekok SET nev = ?, ar = ? WHERE id = ?', [nev, ar, ajandekId]);
+            res.status(200).json(); 
+        } else {
+            res.status(400).json({error: 'id has to be a number'});
         }
-        if (ar.length < 1) {
-            return res.status(400).json({error: 'ar has ro be greater than 0'});
-        }
-        await db.query('UPDATE ajandekok SET nev = ?, ar = ? WHERE id = ?', [nev, ar, ajandekId]);
-        res.status(200).json();
     } catch (error) {
-        res.status(500).json({error: 'internal server error'});
+        res.status(503).json({ error: 'service unavailable' });
     }
 });
 
