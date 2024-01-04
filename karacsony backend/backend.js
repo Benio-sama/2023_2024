@@ -67,6 +67,34 @@ app.get('/ajandekok_off', async (req, res) => {
     }
 });
 
+app.put('/ajandekok/on/:ajandekId', async (req, res) => {
+    try {
+        const ajandekId = req.params.ajandekId;
+        if (typeof ajandekId === 'number') {
+            await db.query('UPDATE ajandekok SET kaphatoe = 1 WHERE id = ?', [ajandekId]);
+            res.status(200).json(); 
+        } else {
+            res.status(400).json({error: 'id has to be a number'});
+        }
+    } catch (error) {
+        res.status(503).json({ error: 'service unavailable' });
+    }
+});
+
+app.put('/ajandekok/off/:ajandekId', async (req, res) => {
+    try {
+        const ajandekId = req.params.ajandekId;
+        if (typeof ajandekId === 'number') {
+            await db.query('UPDATE ajandekok SET kaphatoe = 0 WHERE id = ?', [ajandekId]);
+            res.status(200).json(); 
+        } else {
+            res.status(400).json({error: 'id has to be a number'});
+        }
+    } catch (error) {
+        res.status(503).json({ error: 'service unavailable' });
+    }
+});
+
 app.post('/ajandekok', async(req, res)  => {
     try {
         const nev = req.body.nev;
