@@ -1,8 +1,18 @@
 import express from 'express';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import path from 'path';
 import mysql from 'mysql2';
 
+const _filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(_filename);
 const app = express();
+app.use(express.static('public'));
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+})
 
 const db = mysql.createPool({
     host: 'localhost',
@@ -13,7 +23,7 @@ const db = mysql.createPool({
 
 app.get('/ajandekok', async(req, res) => {
     try {
-        const [rows, fields] = await db.query('SELECT id, nev, ar FROM ajandekok');
+        const [rows, fields] = await db.query('SELECT id, nev, ar, kaphatoe FROM ajandekok');
         res.status(200).send(rows);
     } catch (error) {
         res.status(503).json({ error: 'service unavailable' });
@@ -34,6 +44,24 @@ app.get('/ajandekok/:ajandekId', async(req, res) => {
         } else {
             res.status(400).json({error: 'id has to be a number'});
         }
+    } catch (error) {
+        res.status(503).json({ error: 'service unavailable' });
+    }
+});
+
+app.get('/ajandekok_on', async (req, res) => {
+    try {
+        const [rows, fields] = await db.query('SELECT id, nev, ar, kaphatoe FROM ajandekok WHERE kaphatoe = 1');
+        res.status(200).send(rows);
+    } catch (error) {
+        res.status(503).json({ error: 'service unavailable' });
+    }
+});
+
+app.get('/ajandekok_off', async (req, res) => {
+    try {
+        const [rows, fields] = await db.query('SELECT id, nev, ar, kaphatoe FROM ajandekok WHERE kaphatoe = 0');
+        res.status(200).send(rows);
     } catch (error) {
         res.status(503).json({ error: 'service unavailable' });
     }
