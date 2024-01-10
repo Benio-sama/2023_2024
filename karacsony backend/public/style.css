@@ -1,7 +1,53 @@
 /* The switch - the box around the slider */
-div {
-  text-align: center;
+body {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+div {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+table {  
+  margin : auto;
+  font-family: sans-serif;
+  th, td {
+    padding:.25em .5em;
+    text-align:left;
+    background-color:#eee;    
+
+  }
+}
+
+/* CSS */
+button {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    transition: color 100ms;
+    vertical-align: baseline;
+    touch-action: manipulation;
+}
+
+button:hover, button:focus {
+  background-color: #F082AC;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -42,11 +88,11 @@ div {
   }
   
   input:checked + .slider {
-    background-color: #f686d4;
+    background-color: #EA4C89;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #f686d4;
+    box-shadow: 0 0 1px #EA4C89;
   }
   
   input:checked + .slider:before {

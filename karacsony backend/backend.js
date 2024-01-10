@@ -69,7 +69,7 @@ app.get('/ajandekok_off', async (req, res) => {
 
 app.put('/ajandekok/on/:ajandekId', async (req, res) => {
     try {
-        const ajandekId = req.params.ajandekId;
+        const ajandekId = parseInt(req.params.ajandekId);
         if (typeof ajandekId === 'number') {
             await db.query('UPDATE ajandekok SET kaphatoe = 1 WHERE id = ?', [ajandekId]);
             res.status(200).json(); 
@@ -83,7 +83,7 @@ app.put('/ajandekok/on/:ajandekId', async (req, res) => {
 
 app.put('/ajandekok/off/:ajandekId', async (req, res) => {
     try {
-        const ajandekId = req.params.ajandekId;
+        const ajandekId = parseInt(req.params.ajandekId);
         if (typeof ajandekId === 'number') {
             await db.query('UPDATE ajandekok SET kaphatoe = 0 WHERE id = ?', [ajandekId]);
             res.status(200).json(); 
@@ -119,7 +119,7 @@ app.post('/ajandekok', async(req, res)  => {
 
 app.delete('/ajandekok/:ajandekId', async (req, res) => {
     try {
-        const ajandekId = req.params.ajandekId;
+        const ajandekId = parseInt(req.params.ajandekId);
         if (typeof ajandekId === 'number') {
             await db.query('DELETE FROM ajandekok WHERE id = ?', [ajandekId]);
             res.status(200).json();
