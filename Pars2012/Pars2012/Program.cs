@@ -14,6 +14,8 @@ namespace Pars2012
             f.Beolvasas("Selejtezo2012.txt");
             f.HanyDB();
             f.Tovabb();
+            f.Legjobb();
+            f.Beiras();
 
             Console.ReadKey();
         }

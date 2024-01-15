@@ -79,7 +79,7 @@ namespace Pars2012
 
         public override string ToString()
         {
-            return $"{this.nev} ({this.nemzet_kod}): {this.csoport}, 1: {this.d1}, 2: {this.d2}, 3: {this.d3}, legnagyobb: {Eredmeny()}";
+            return $"{this.nev} ({Nemzet()} ({Kod()})): {this.csoport}, 1: {this.d1}, 2: {this.d2}, 3: {this.d3}, legnagyobb: {Eredmeny()}";
         }
 
         public double Eredmeny()
@@ -110,9 +110,28 @@ namespace Pars2012
         }
         public string Nemzet()
         {
-            string[] seged = this.nemzet_kod.Split('(');
-            return seged    );
+            string[] seged = this.nemzet_kod.Split(' ');
+            if (seged.Length < 3)
+            {
+                return seged[0];
+            }
+            else
+            {
+                return seged[0] + ' ' + seged[1];
+            }
             
+        }
+        public string Kod()
+        {
+            string[] seged = this.nemzet_kod.Split(' ');
+            if (seged.Length < 3)
+            {
+                return seged[1].Trim('(').Trim(')');
+            }
+            else
+            {
+                return seged[2].Trim('(').Trim(')');
+            }
         }
     }
 }
