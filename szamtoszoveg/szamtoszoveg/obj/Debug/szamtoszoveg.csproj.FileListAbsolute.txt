@@ -1,0 +1,7 @@
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\bin\Debug\szamtoszoveg.exe.config
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\bin\Debug\szamtoszoveg.exe
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\bin\Debug\szamtoszoveg.pdb
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\obj\Debug\szamtoszoveg.csproj.AssemblyReference.cache
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\obj\Debug\szamtoszoveg.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\obj\Debug\szamtoszoveg.exe
+C:\Users\vagok\Documents\GitHub\2023_2024\szamtoszoveg\szamtoszoveg\obj\Debug\szamtoszoveg.pdb
