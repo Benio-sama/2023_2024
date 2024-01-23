@@ -12,9 +12,9 @@ namespace VizibicikliKolcsonzo
         {
             Feladatok f = new Feladatok();
             f.Beolvas("kolcsonzesek.txt");
-            //Console.WriteLine("napi kolcsonzesek szama: " + f.Hany());
-            //f.Kereso();
-            //f.Keresoido();
+            Console.WriteLine("napi kolcsonzesek szama: " + f.Hany());
+            f.Kereso();
+            f.Keresoido();
             f.NapiBev();
 
 
