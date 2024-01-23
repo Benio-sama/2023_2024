@@ -11,14 +11,9 @@ namespace kosar2004
         static void Main(string[] args)
         {
             Feladatok f = new Feladatok();
-            Console.WriteLine("2. feladat");
-            f.Beolvasas("eredmenyek.csv");
-            Console.WriteLine("3. feladat");
+            f.Beolvasas();
             Console.WriteLine(f.HanyRM());
-            Console.WriteLine("4. feladat");
-            Console.WriteLine("volt dontetlen meccs?");
             Console.WriteLine(f.Dontetlen());
-            Console.WriteLine("5. feladat");
             Console.WriteLine(f.Barcelona());
             Console.WriteLine("6. feladat");
             f.Nov();

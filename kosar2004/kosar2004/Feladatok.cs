@@ -5,39 +5,53 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using MySql.Data.MySqlClient;
 
 namespace kosar2004
 {
     internal class Feladatok
     {
         private List<Meccs> meccsek = new List<Meccs>();
+        MySqlConnectionStringBuilder con = new MySqlConnectionStringBuilder();
+
+        public Feladatok()
+        {
+            con.Server = "localhost";
+            con.Port = 3306;
+            con.Database = "eredmenyek";
+            con.UserID = "root";
+            con.Password = "";
+        }
 
         internal List<Meccs> Meccsek { get => meccsek; set => meccsek = value; }
 
-        public void Beolvasas(string fajl)
+        public void Beolvasas()
         {
-            using (StreamReader sr = new StreamReader(fajl))
+            using (MySqlConnection connection = new MySqlConnection(con.ConnectionString))
             {
-                sr.ReadLine();
-                while (!sr.EndOfStream) 
+                connection.Open();
+                string lekerdezes = "SELECT * FROM eredmenyek";
+                MySqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = lekerdezes;
+                using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
-                    string sor = sr.ReadLine();
-                    string[] sorok = sor.Split(';');
-                    string hazai = sorok[0];
-                    string idegen = sorok[1];
-                    int hazaip = int.Parse(sorok[2]);
-                    int idegenp = int.Parse(sorok[3]);
-                    string hely = sorok[4];
-                    DateTime datum = DateTime.Parse(sorok[5]);
-                    Meccs m = new Meccs(hazai, idegen, hazaip, idegenp, hely, datum);
-                    meccsek.Add(m);
-                    /*foreach (var item in meccsek)
+                    while (reader.Read())
                     {
-                        Console.WriteLine(item);
-                    }*/
+                        string hazai = reader.GetString("hazai");
+                        string idegen = reader.GetString("idegen");
+                        int hazaip = reader.GetInt32("hazai_pont");
+                        int idegenp = reader.GetInt32("idegen_pont");
+                        string helyszin = reader.GetString("helyszin");
+                        DateTime datum = DateTime.Parse(reader.GetString("idopont"));
+                        Meccs m = new Meccs(hazai, idegen, hazaip, idegenp, helyszin, datum);
+                        meccsek.Add(m);
+                    }
                 }
-                Console.WriteLine("sikeres beolvasas");
             }
+            /*foreach (var item in meccsek)
+            {
+                Console.WriteLine(item);
+            }*/
         }
         public string HanyRM()
         {
@@ -54,7 +68,7 @@ namespace kosar2004
                     db2++;
                 }
             }
-            return $"Real Madrid: Hazai: {db}, Idegen: {db2}";
+            return $"3. Feladat: Real Madrid: Hazai: {db}, Idegen: {db2}";
         }
         public string Dontetlen()
         {
@@ -62,10 +76,10 @@ namespace kosar2004
             {
                 if (item.Hazaip == item.Idegenp)
                 {
-                    return "igen";
+                    return "4. feladat: Volt dontetlen? igen";
                 }
             }
-            return "nem";
+            return "4. feladat: Volt dontetlen? nem";
         }
         public string Barcelona()
         {
@@ -73,14 +87,14 @@ namespace kosar2004
             {
                 if (item.Hazai.Contains("Barcelona"))
                 {
-                    return $"a barceloniai csapat neve: {item.Hazai}";
+                    return $"5. feladat: barceloniai csapat neve: {item.Hazai}";
                 }
                 else if (item.Idegen.Contains("Barcelona"))
                 {
-                    return $"a barceloniai csapat neve: {item.Idegen}";
+                    return $"5. feladat: barceloniai csapat neve: {item.Idegen}";
                 }
             }
-            return "nincs barcelonai csapat";
+            return "5. feladat: nincs barcelonai csapat";
         }
         public void Nov() 
         {
@@ -88,7 +102,7 @@ namespace kosar2004
             {
                 if (item.Datum.Year == 2004 && item.Datum.Month == 11 && item.Datum.Day == 21)
                 {
-                    Console.WriteLine($"{item.Hazai} - {item.Idegen} ({item.Hazaip}:{item.Idegenp})");
+                    Console.WriteLine($"\t{item.Hazai} - {item.Idegen} ({item.Hazaip}:{item.Idegenp})");
                 }
             }
         }
@@ -108,7 +122,7 @@ namespace kosar2004
             {
                 if (item.Value > 20)
                 {
-                    Console.WriteLine($"{item.Key}: {item.Value}");
+                    Console.WriteLine($"\t{item.Key}: {item.Value}");
                 }
             }
         }

@@ -32,10 +32,10 @@ namespace VizibicikliKolcsonzo
                     Kolcsonzo k = new Kolcsonzo(nev, azon, ora1, perc1, ora2, perc2);
                     kolcson.Add(k);
                 }
-                /*foreach (var item in kolcson)
+                foreach (var item in kolcson)
                 {
                     Console.WriteLine(item);
-                }*/
+                }
             }
         }
 
