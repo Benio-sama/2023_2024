@@ -31,6 +31,7 @@ namespace VizibicikliKolcsonzo
         public int Eperc { get => eperc; set => eperc = value; }
         public int Vora { get => vora; set => vora = value; }
         public int Vperc { get => vperc; set => vperc = value; }
+
         public override string ToString()
         {
             return $"{this.nev}: ({this.azon}) {this.eora}:{this.eperc} - {this.vora}:{this.vperc}";
