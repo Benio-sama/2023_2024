@@ -22,6 +22,8 @@ namespace PizzafutarProjekt
         {
             AdatbazisMegnyitasa();
             CimBeolvasas();
+            PizzakHozzaadasa();
+            RendelesFelvetel();
         }
 
         private void CimBeolvasas()
@@ -51,6 +53,33 @@ namespace PizzafutarProjekt
                 Console.WriteLine(ex);
             }
         }
+        private void PizzakHozzaadasa()
+        {
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(conn.ConnectionString);
+                connection.Open();
+                string lekerdezes = "SELECT * FROM pizza";
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = lekerdezes;
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int id = reader.GetInt32("id");
+                        string nev = reader.GetString("nev");
+                        int meret = reader.GetInt32("meret");
+                        int ar = reader.GetInt32("ar");
+                        Pizza obj = new Pizza(nev, meret, ar);
+                        pizzak.Add(id, obj);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
 
         private void AdatbazisMegnyitasa()
         {
@@ -60,6 +89,36 @@ namespace PizzafutarProjekt
             conn.Database = "pizzafutar";
             conn.UserID = "root";
             conn.Password = "";
+        }
+
+        private void RendelesFelvetel()
+        {
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(conn.ConnectionString);
+                connection.Open();
+                string lekerdezes = "SELECT * FROM rendeles";
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = lekerdezes;
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int pizzaId = reader.GetInt32("pizzaid");
+                        int cimId = reader.GetInt32("cimid");
+                        int db = reader.GetInt32("darab");
+                        TimeSpan t = reader.GetTimeSpan("szallitas");
+                        Pizza p = pizzak[pizzaId];
+                        Cim c = cimek[cimId];
+                        Rendeles r = new Rendeles(p, c, db, t);
+                        rendelesek.Add(r);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 }

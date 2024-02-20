@@ -28,7 +28,8 @@ namespace PizzafutarProjekt
         private void btn_adatbazis_Click(object sender, RoutedEventArgs e)
         {
             Adatbazis a = new Adatbazis();
-            foreach (var item in a.Cimek)
+            
+            foreach (var item in a.Rendelesek)
             {
                 lbox.Items.Add(item.ToString());
             }
