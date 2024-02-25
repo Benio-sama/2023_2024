@@ -19,7 +19,7 @@ function Szoveg() {
 
 function App() {
   const [ db, setDb ] = useState(0);
-  const [ lista, setLista ] = useState('egy elem');
+  //const [ lista, setLista ] = useState('egy elem');
   console.log('app re-render');
   return <div>
     <button onClick={() => { 

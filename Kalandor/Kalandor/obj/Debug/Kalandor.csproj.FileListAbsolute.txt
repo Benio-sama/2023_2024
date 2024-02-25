@@ -18,7 +18,6 @@ C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\bin\Debug\Kalandor.exe.
 C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\bin\Debug\Kalandor.exe
 C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\bin\Debug\Kalandor.pdb
 C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\obj\Debug\Kalandor.csproj.AssemblyReference.cache
-C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\obj\Debug\Kalandor.csproj.SuggestedBindingRedirects.cache
 C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\obj\Debug\Kalandor.csproj.CoreCompileInputs.cache
 C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\obj\Debug\Kalandor.exe
 C:\Users\vagok\Asztal\github\2023_2024\Kalandor\Kalandor\obj\Debug\Kalandor.pdb
