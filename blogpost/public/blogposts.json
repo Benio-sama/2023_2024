@@ -1,0 +1,26 @@
+[
+    {
+        "title": "My first post",
+        "content": "Hello Wolld!",
+        "date": "2024-01-01",
+        "image": "https://picsum.photos/id/10/200"
+    },
+    {
+        "title": "Findings",
+        "content": "Dear readers, today I found out how to use emojis 😍. They are pretty neat! 🐉👌👑",
+        "date": "2024-02-02",
+        "image": "https://picsum.photos/id/28/200"
+    },
+    {
+        "title": "Pinned post",
+        "content": "I couldn't find a way to pin posts, so I just set it to a really distant date in the future. Anyways, I just want to warn you about the 2038 problem. Hope my blog won't break. Bye!",
+        "date": "2039-02-01",
+        "image": "https://picsum.photos/id/48/200"
+    },
+    {
+        "title": "I'm shutting down this blog",
+        "content": "I'm starting to get really busy with my webdev assignments, I don't really have time to update the blog anymore. Shoutout to all my 3 readers for following me!",
+        "date": "2024-02-12",
+        "image": "https://picsum.photos/id/20/200"
+    }
+]
