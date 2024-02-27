@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|c:\\users\\vagok\\documents\\github\\2023_2024\\pars2012gui\\pars2012gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|solutionrelative:pars2012gui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|c:\\users\\vagok\\documents\\github\\2023_2024\\pars2012gui\\pars2012gui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|solutionrelative:pars2012gui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\pars2012gui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|solutionrelative:pars2012gui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\pars2012gui\\versenyzo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2172C530-2520-4FDF-B25D-EF385C211BF8}|Pars2012GUI\\Pars2012GUI.csproj|solutionrelative:pars2012gui\\versenyzo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\Window1.xaml",
+              "RelativeDocumentMoniker": "Pars2012GUI\\Window1.xaml",
+              "ToolTip": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\Window1.xaml*",
+              "RelativeToolTip": "Pars2012GUI\\Window1.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-02-27T11:23:41.203Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Pars2012GUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Pars2012GUI\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T09:20:42.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Versenyzo.cs",
+              "DocumentMoniker": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\Versenyzo.cs",
+              "RelativeDocumentMoniker": "Pars2012GUI\\Versenyzo.cs",
+              "ToolTip": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\Versenyzo.cs",
+              "RelativeToolTip": "Pars2012GUI\\Versenyzo.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAUwIkAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T09:23:35.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Pars2012GUI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Pars2012GUI\\Pars2012GUI\\MainWindow.xaml",
+              "RelativeToolTip": "Pars2012GUI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-01-16T09:20:42.891Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
