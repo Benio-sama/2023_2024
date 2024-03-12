@@ -1,5 +1,5 @@
 interface Props {
-    id: number;
+    id?: number;
     description: string;
     price: number;
 }
