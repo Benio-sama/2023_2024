@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Fuvar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6669DB99-4484-43F1-8278-56F4A11F0E0F}|Fuvar\\Fuvar.csproj|c:\\users\\vagok\\documents\\github\\2023_2024\\fuvar\\fuvar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6669DB99-4484-43F1-8278-56F4A11F0E0F}|Fuvar\\Fuvar.csproj|solutionrelative:fuvar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Fuvar\\Fuvar\\Program.cs",
+              "RelativeDocumentMoniker": "Fuvar\\Program.cs",
+              "ToolTip": "C:\\Users\\vagok\\Documents\\GitHub\\2023_2024\\Fuvar\\Fuvar\\Program.cs",
+              "RelativeToolTip": "Fuvar\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:57:39.144Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
