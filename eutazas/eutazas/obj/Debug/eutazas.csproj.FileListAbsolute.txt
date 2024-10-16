@@ -1,0 +1,7 @@
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\bin\Debug\eutazas.exe.config
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\bin\Debug\eutazas.exe
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\bin\Debug\eutazas.pdb
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\obj\Debug\eutazas.csproj.AssemblyReference.cache
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\obj\Debug\eutazas.csproj.CoreCompileInputs.cache
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\obj\Debug\eutazas.exe
+C:\Users\vagok\Asztal\github\2023_2024\eutazas\eutazas\obj\Debug\eutazas.pdb
